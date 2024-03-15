@@ -6,8 +6,9 @@ jobs:
     steps:
     #checkout le code
       - name: Checkout code
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - run: tree
+        name: Run
         
 # checkout le code
 # build et tag image

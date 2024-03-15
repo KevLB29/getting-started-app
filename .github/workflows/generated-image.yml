@@ -15,6 +15,7 @@ jobs:
         with:
           context: .
           push: true
+          write: packages
           tags: kevlb29/getting-started-app:latest
           
 # checkout le code

@@ -10,6 +10,13 @@ jobs:
       - run: tree
         name: Run
         
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: KevLB29/getting-started-app:latest
+          
 # checkout le code
 # build et tag image
 # push sur dockerhub

@@ -1,3 +1,17 @@
+#Lorsqu'un push survient, on veut automatiquelebt créer une image docker et la pousser sur le dockerhub.
+
+#Trigger
+#lorsqu'un push survient
+
+#Steps :
+# - checkout le code
+# - build et tag image
+# - docker login
+# - push sur dockerhub
+
+#Bonus
+# - Gérer les secrets (username / password / token) de manière sécurisée.
+
 name: package-getting-started-app
 on : [push]
 jobs: 
@@ -18,6 +32,3 @@ jobs:
           write: packages
           tags: kevlb29/getting-started-app:latest
           
-# checkout le code
-# build et tag image
-# push sur dockerhub
